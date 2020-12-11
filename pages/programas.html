@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<style>
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+<script>
+  var i = 0
+  function clickLink() {
+      i++;
+      if (i == 1) {
+          document.getElementById("clicks").innerHTML = i;
+      }
+      else
+      {
+          document.getElementById("clicks").innerHTML = i;
+      }
+  }
+  function Reset() {
+      i = 0;
+      document.getElementById("clicks").innerHTML = i;
+  }
+  </script>
+</head>
+<body>
+  <a href="../index.html" onclick="javascript:clickLink();"  target="_blank">Click aquí</a>
+  <p>Clicks <span id="clicks">0</span></p>
+  <a href="javascript:Reset();">Reset</a>
+</body>
+
+</html>
