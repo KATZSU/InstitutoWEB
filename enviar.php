@@ -36,7 +36,7 @@ try {
     $mail->Body    = $body;
 
     $mail->send();
-    echo '<script>alert("El mensaje se envío correctamente")</script>';
+    echo '<script>window.location.href="./index.html"</script>';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }

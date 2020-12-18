@@ -9,20 +9,29 @@
 
     <!-- Import img, title, css, fontAwesome -->
     <link rel="stylesheet icon" href="images/icon.png">
-    <link rel="stylesheet"  type="text/css" href="css/modal.css">
-    <link rel="stylesheet"  type="text/css" href="css/style.css">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-
-    
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
 </head>
 
-<body>
+<body class="hidden">
+
+    <!-- Botón flotante -->
+    <a href="#" class="btn-flotante"><i class="fab fa-whatsapp fa-2x"></i></a>
+
+    <!-- Loader -->
+    <div class="centrado" id="onload">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
     <!-- Principal -->
     <section id="main">
         <nav>
             <!-- Logo instituto -->
-            <a href="#" class="logo">LOGO INSTITUTO</a>
+            <a href="#" class="logo">INSTITUTO (NAME)</a>
 
             <!-- Menú -->
             <div class="toggle"></div>
@@ -31,11 +40,12 @@
                 <li><a href="#about">Conócenos</a></li>
                 <li><a href="#programas">Programas</a></li>
                 <li><a href="#b-estudiantes">Bienes/estudiantes</a></li>
-                <li><a href="#revistas">Revistas</a></li>
+                <li><a href="#" onclick="retorno();">Revistas</a></li>
                 <li><a href="#contact-form">Contáctanos</a></li>
             </ul>
-            <!-- Lenguage -->
-            <a href="#">Es</a>
+            <!-- versión del sistema -->
+            <a href="javascript:void(0);" style="font-size: 11px; color: #292929;" id="beta">BETA 0.0.1 <i
+                    class="fab fa-github"></i></a>
         </nav>
         <!-- Informacián ins -->
         <div class="name">
@@ -44,33 +54,35 @@
             </h1>
 
             <!-- Los detalles -->
-            <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores dolore placeat
+            <p class="animate__animated animate__pulse details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat maiores dolore placeat
                 non doloribus magnam saepe minus totam reprehenderit error? Ipsa doloremque et dolor saepe nihil sit
                 tempore unde nostrum?</p>
 
             <a href="#" class="cv-btn">Instituto</a>
         </div>
-        <div class="black-line"></div>   
+        <div class="black-line"></div>
         <!-- Social -->
-        <div class="social">
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i> </a>
-            <a href="#"><i class="fab fa-twitter"></i> </a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i> </a>
+        <div class="animate__animated animate__pulse social">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook"></i> </a>
+            <a href="#"><i class="fab fa-twitter twitter"></i> </a>
+            <a href="#"><i class="fab fa-instagram instagram"></i></a>
+            <a href="#" class="youtube"><i class="fab fa-youtube youtube"></i> </a>
         </div>
     </section>
     <!-- Sobre -->
     <section id="about">
         <div class="about-text">
-            <h1>Sobre nosotros.</h1>
-            <h2>Instituto (#############)</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatem inventore saepe. Nesciunt
+            <h1 class="wow animate__animated animate__fadeInDown">Sobre nosotros.</h1>
+            <h2 class="wow animate__animated animate__fadeInDown">Instituto (#############)</h2>
+            <p class="wow animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Cumque voluptatem inventore saepe. Nesciunt
                 delectus ut in cupiditate, vero ipsa voluptatem recusandae porro. Earum temporibus labore maiores
                 officiis quis molestiae vel.</p>
             <button>Ver más detalles</button>
         </div>
         <!-- Model -->
-        <div class="about-model">
+        <div class="wow animate__animated animate__fadeInDown about-model">
             <img src="images/about-model.png" alt="model">
         </div>
     </section>
@@ -78,12 +90,12 @@
     <!-- Programas -->
     <section id="programas">
         <!-- Heading -->
-        <div class="s-heading">
+        <div class="wow animate__animated animate__fadeInDown s-heading">
             <h1>Programas</h1>
             <p>Cursos disponibles</p>
         </div>
         <!-- Contenedor de programas -->
-        <div class="b-container">
+        <div class="wow animate__animated animate__pulse b-container">
             <!-- S1 -->
             <div class="s-box">
                 <!-- Img -->
@@ -95,7 +107,7 @@
                 </div>
                 <!-- Text -->
                 <div class="s-b-text">
-                    <a href="#">Pensum</a>
+                    <a href="#popupx1">Pensum</a>
                 </div>
             </div>
 
@@ -110,7 +122,7 @@
                 </div>
                 <!-- Text -->
                 <div class="s-b-text">
-                    <a href="#">Pensum</a>
+                    <a href="#popupx2">Pensum</a>
                 </div>
             </div>
 
@@ -125,37 +137,77 @@
                 </div>
                 <!-- Text -->
                 <div class="s-b-text">
-                      <a href="#popup">Pensum</a>
+                    <a href="#popup">Pensum</a>
                 </div>
             </div>
 
-            
+
         </div>
 
-        
+
         <div>
-            <a href="pages/programas.html" class="cv-btn">Otros programas</a>
+            <a href="#" onclick="$(location).attr('href','./pages/programas.html');"" class=" cv-btn">Otros
+                programas</a>
         </div>
-
-            <div class="popup" id="popup">
-              <div class="popup-inner">
+        <!-- Modal de información para el pensum X1 -->
+        <div class="popup" id="popupx1">
+            <div class="popup-inner">
                 <div class="popup__photo">
-                  <img src="./images/pensum_img.jpg" alt="pensum_img">
+                    <img src="./images/pensum_img.jpg" alt="pensum_img">
                 </div>
                 <div class="popup__text">
-                  <h1>Lorem ipsum dolor sit amet</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+                    <h1>function program number1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate
+                        vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius
+                        nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros
+                        viverra pulvinar.</p>
                 </div>
                 <a class="popup__close" href="#programas">X</a>
-              </div>
             </div>
+        </div>
+        <!-- Modal de información para el pensum X2 -->
+        <div class="popup" id="popupx2">
+            <div class="popup-inner">
+                <div class="popup__photo">
+                    <img src="./images/pensum_img.jpg" alt="pensum_img">
+                </div>
+                <div class="popup__text">
+                    <h1>function program number2</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate
+                        vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius
+                        nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros
+                        viverra pulvinar.</p>
+                </div>
+                <a class="popup__close" href="#programas">X</a>
+            </div>
+        </div>
+
+        <!-- Modal de información para el pensum X3 -->
+        <div class="popup" id="popup">
+            <div class="popup-inner">
+                <div class="popup__photo">
+                    <img src="./images/pensum_img.jpg" alt="pensum_img">
+                </div>
+                <div class="popup__text">
+                    <h1>function program number3</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate
+                        vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius
+                        nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros
+                        viverra pulvinar.</p>
+                </div>
+                <a class="popup__close" href="#programas">X</a>
+            </div>
+        </div>
     </section>
 
     <!-- b.estudiantes -->
     <section id="b-estudiantes">
-        <h1 class="p-headind">Bienes / Estudiantes</h1>
+        <h1 class="wow animate__animated animate__fadeInDown p-headind">Bienes / Estudiantes</h1>
         <!-- Container -->
-        <div class="p-container">
+        <div class="wow animate__animated animate__pulse p-container">
             <div class="p-box">
                 <div class="overlay-text">
                     <h1>Bienestar</h1>
@@ -195,7 +247,7 @@
                 <img src="images/error2.jpg" alt="">
             </div>
 
-             <!-- b.estudiantes 5 -->
+            <!-- b.estudiantes 5 -->
             <div class="p-box">
                 <div class="overlay-text">
                     <h1>Bienestar</h1>
@@ -205,7 +257,7 @@
                 <img src="images/error2.jpg" alt="">
             </div>
 
-        <!-- b.estudiantes 6 -->
+            <!-- b.estudiantes 6 -->
             <div class="p-box">
                 <div class="overlay-text">
                     <h1>Bienestar</h1>
@@ -223,44 +275,88 @@
         <!-- heading -->
         <h1 class="c-b-heading">Contacte con nosotros</h1>
         <!-- btn -->
-        <button>Enviar EMAIL</button>
+        <button id="btn-email">Envíanos un Email <i class="fas fa-level-down-alt"></i></button>
     </section>
     <!-- Contact from -->
     <section id="contact-form">
         <form action="./enviar.php" method="POST">
             <!-- left -->
             <div class="contact-left">
-                <h1 class="c-1-heading"><font style="border-bottom: 3px solid #63D9FF;">Escríbenos</font></h1>
-            <div class="f-name">
-                <font>Nombre</font>
-                <input type="text" name="customer_name" placeholder="Nombre completo"/>
+                <h1 class="c-1-heading">
+                    <font style="border-bottom: 3px solid #63D9FF;">Escríbenos</font>
+                </h1>
+                <div class="f-name">
+                    <font>Nombre</font>
+                    <input type="text" name="customer_name" placeholder="Nombre completo" />
+                </div>
+                <div class="f-email">
+                    <font>Email</font>
+                    <input type="email" name="customer_email" placeholder="Example@gmail.com" />
+                </div>
             </div>
-            <div class="f-email">
-                <font>Email</font>
-                <input type="email" name="customer_email" placeholder="Example@gmail.com"/>
+            <!-- right -->
+            <div class="contact-right">
+                <div class="message">
+                    <font>Mensaje</font>
+                    <textarea name="customer_message" id="" cols="20" rows="5" placeholder="Escribe algo..."></textarea>
+                </div>
+                <!-- Submit -->
+                <button type="submit">ENVIAR</button>
             </div>
-            </div>
-         <!-- right -->
-         <div class="contact-right">
-             <div class="message">
-                 <font>Mensaje</font>
-                 <textarea name="customer_message" id="" cols="20" rows="5" placeholder="Escribe algo..."></textarea>
-             </div>
-             <!-- Submit -->
-             <button type="submit">Submit</button>
-         </div>
         </form>
     </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div id="button"></div>
+        <div id="container">
+            <div id="cont">
+                <div class="footer_center">
+                    <div class="courses-container">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h6>Para más información</h6>
+                                <span><i class="far fa-paper-plane"></i> example@example.com</span>
+                                <span><i class="fas fa-mobile-alt"></i> 3xx-xxx-xxxx</span>                    
+                            </div>
+                            <div class="course-info">
+                                <h2>Derechos reservados &copy; Instituto 2020</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
 </body>
 
+<script src="./js/c8e4d183c2.js"></script>
+<script src="./js/wow.min.js"></script>
 <script src="./js/JQuery3.3.1.js"></script>
+<script src="./js/codigo.js"></script>
 <script type="text/javascript">
-/* Responsive navigation */
-    $(document).ready(function(){
-        $('.toggle').click(function(){
-        $('.toggle').toggleClass('active')
-        $('nav ul').toggleClass('active-menu')
+    /* Iniciar WOW */
+    new WOW().init();
+    /* Responsive navigation */
+    $(document).ready(function () {
+        $('.toggle').click(function () {
+            $('.toggle').toggleClass('active')
+            $('nav ul').toggleClass('active-menu')
         })
     });
+
+    const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
 </script>
+
 </html>

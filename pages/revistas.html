@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB V.0.0.1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-edgue">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import img, title, css, fontAwesome -->
+    <link rel="stylesheet icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="../css/modal.css">
+    <link rel="stylesheet" type="text/css" href="../css/styleRe.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+</head>
+
+<body class="hidden">
+    <!-- Loader -->
+    <div class="centrado" id="onload">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Principal -->
+
+    <section id="main">
+        <nav>
+            <!-- Logo instituto -->
+            <a href="#" class="logo">INSTITUTO (NAME)</a>
+
+            <!-- Menú -->
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li>
+                    <a href="#" onclick="retornoIndex();">Volver <i class="fas fa-reply"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+    <!-- Programas -->
+    <section id="programas">
+        <!-- Heading -->
+        <div class="animate__animated animate__fadeInDown s-heading">
+            <h1>Revistas</h1>
+            <p>publicadas</p>
+        </div>
+        <!-- Contenedor de revistas -->
+        <div class="animate__animated animate__pulse b-container">
+            <!-- S1 -->
+            <div class="s-box">
+                <!-- Img -->
+                <div class="s-b-img">
+                    <!-- Type -->
+                    <div class="s-type">Nombre revista</div>
+                    <!-- Name -->
+                    <img src="../images/undraw_education_f8ru.png">
+                </div>
+                <!-- Text -->
+                <div class="s-b-text">
+                    <a href="#">Descargar</a>
+                </div>
+            </div>
+
+            <!-- S2 -->
+            <div class="s-box">
+                <!-- Img -->
+                <div class="s-b-img">
+                    <!-- Type -->
+                    <div class="s-type">Nombre revista</div>
+                    <!-- Name -->
+                    <img src="../images/undraw_education_f8ru.png">
+                </div>
+                <!-- Text -->
+                <div class="s-b-text">
+                    <a href="#">Descargar</a>
+                </div>
+            </div>
+
+            <!-- S3 -->
+            <div class="s-box">
+                <!-- Img -->
+                <div class="s-b-img">
+                    <!-- Type -->
+                    <div class="s-type">Nombre revista</div>
+                    <!-- Name -->
+                    <img src="../images/undraw_education_f8ru.png">
+                </div>
+                <!-- Text -->
+                <div class="s-b-text">
+                    <a href="#">Descargar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="../js/c8e4d183c2.js" crossorigin="anonymous"></script>
+<script src="../js/JQuery3.3.1.js"></script>
+<script src="../js/codigo.js"></script>
+<script type="text/javascript">
+    /* Responsive navigation */
+    $(document).ready(function () {
+        $('.toggle').click(function () {
+            $('.toggle').toggleClass('active')
+            $('nav ul').toggleClass('active-menu')
+        })
+    });
+</script>
+
+</html>

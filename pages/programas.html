@@ -1,40 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Programas INS</title>
+  <meta http-equiv="X-UA-Compatible" content="IE-edgue">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Import img, title, css, fontAwesome -->
+  <link rel="stylesheet icon" href="../images/icon.png">
+  <link rel="stylesheet" type="text/css" href="../css/modal.css">
+  <link rel="stylesheet" type="text/css" href="../css/stylePro.css">
+  <link rel="stylesheet" href="../css/animate.min.css">
 </head>
 
-<style>
-  body{
-    font-family: 'Poppins', sans-serif;
-  }
-</style>
-<script>
-  var i = 0
-  function clickLink() {
-      i++;
-      if (i == 1) {
-          document.getElementById("clicks").innerHTML = i;
-      }
-      else
-      {
-          document.getElementById("clicks").innerHTML = i;
-      }
-  }
-  function Reset() {
-      i = 0;
-      document.getElementById("clicks").innerHTML = i;
-  }
-  </script>
-</head>
-<body>
-  <a href="../index.html" onclick="javascript:clickLink();"  target="_blank">Click aquí</a>
-  <p>Clicks <span id="clicks">0</span></p>
-  <a href="javascript:Reset();">Reset</a>
+<body class="hidden">
+  <!-- Loader -->
+  <div class="centrado" id="onload">
+    <div class="lds-ripple">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Principal -->
+  <nav>
+    <!-- Logo instituto -->
+    <a href="#" class="logo">INSTITUTO (NAME)</a>
+    <!-- Menú -->
+    <div class="toggle"></div>
+    <ul class="menu">
+      <li>
+        <a href="#" onclick="retornoIndex();">Volver <i class="fas fa-reply"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Programas -->
+  <section id="programas">
+    <!-- Heading -->
+    <div class="s-heading">
+      <h1 class="animate__animated animate__fadeInDown">Programas</h1>
+      <p class="animate__animated animate__fadeInDown">Disponibles actualmente</p>
+    </div>
+    <!-- Contenedor de programas -->
+    <div class="animate__animated animate__pulse b-container">
+      <!-- S1 -->
+      <div class="s-box">
+        <!-- Img -->
+        <div class="s-b-img">
+          <!-- Type -->
+          <div class="s-type">Nombre programa</div>
+          <!-- Name -->
+          <img src="../images/undraw_developer_activity_bv83.png">
+        </div>
+        <!-- Text -->
+        <div class="s-b-text">
+          <a href="#popupx1">Pensum</a>
+        </div>
+      </div>
+      <!-- Modal x1 -->
+      <div class="popup" id="popupx1">
+        <div class="popup-inner">
+          <div class="popup__photo">
+            <img src="../images/pensum_img.jpg" alt="pensum_img">
+          </div>
+          <div class="popup__text">
+            <a href="#cerrar"></a>
+            <h1>PENSUM X1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae,
+              blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis
+              purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+          </div>
+          <a class="popup__close" href="#cerrar">X</a>
+        </div>
+      </div>
+
+      <!-- S2 -->
+      <div class="s-box">
+        <!-- Img -->
+        <div class="s-b-img">
+          <!-- Type -->
+          <div class="s-type">Nombre programa</div>
+          <!-- Name -->
+          <img src="../images/undraw_developer_activity_bv83.png">
+        </div>
+        <!-- Text -->
+        <div class="s-b-text">
+          <a href="#popupx2">Pensum</a>
+        </div>
+      </div>
+
+      <!-- Modal pensum 2 -->
+      <div class="popup" id="popupx2">
+        <div class="popup-inner">
+          <div class="popup__photo">
+            <img src="../images/pensum_img.jpg" alt="pensum_img">
+          </div>
+          <div class="popup__text">
+            <h1>PENSUM X2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae,
+              blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis
+              purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+          </div>
+          <a class="popup__close" href="#">X</a>
+        </div>
+      </div>
+
+      <!-- S3 -->
+      <div class="s-box">
+        <!-- Img -->
+        <div class="s-b-img">
+          <!-- Type -->
+          <div class="s-type">Nombre programa</div>
+          <!-- Name -->
+          <img src="../images/undraw_developer_activity_bv83.png">
+        </div>
+        <!-- Text -->
+        <div class="s-b-text">
+          <a href="#popupx3">Pensum</a>
+        </div>
+      </div>
+
+      <!-- Modal pensum -->
+      <div class="popup" id="popupx3">
+        <div class="popup-inner">
+          <div class="popup__photo">
+            <img src="../images/pensum_img.jpg" alt="pensum_img">
+          </div>
+          <div class="popup__text">
+            <h1>PENSUM X3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae,
+              blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis
+              purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+          </div>
+          <a class="popup__close" href="#">X</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenedor de programas -->
+    <div class="animate__animated animate__pulse b-container">
+      <!-- S1 -->
+      <div class="s-box">
+        <!-- Img -->
+        <div class="s-b-img">
+          <!-- Type -->
+          <div class="s-type">Nombre programa</div>
+          <!-- Name -->
+          <img src="../images/undraw_developer_activity_bv83.png">
+        </div>
+        <!-- Text -->
+        <div class="s-b-text">
+          <a href="#popupx1">Pensum</a>
+        </div>
+      </div>
+      <!-- Modal x1 -->
+      <div class="popup" id="popupx1">
+        <div class="popup-inner">
+          <div class="popup__photo">
+            <img src="../images/pensum_img.jpg" alt="pensum_img">
+          </div>
+          <div class="popup__text">
+            <h1>PENSUM X1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae,
+              blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis
+              purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+          </div>
+          <a class="popup__close" href="#">X</a>
+        </div>
+      </div>
+
+      <!-- S2 -->
+      <div class="s-box">
+        <!-- Img -->
+        <div class="s-b-img">
+          <!-- Type -->
+          <div class="s-type">Nombre programa</div>
+          <!-- Name -->
+          <img src="../images/undraw_developer_activity_bv83.png">
+        </div>
+        <!-- Text -->
+        <div class="s-b-text">
+          <a href="#popupx2">Pensum</a>
+        </div>
+      </div>
+
+      <!-- Modal pensum 2 -->
+      <div class="popup" id="popupx2">
+        <div class="popup-inner">
+          <div class="popup__photo">
+            <img src="../images/pensum_img.jpg" alt="pensum_img">
+          </div>
+          <div class="popup__text">
+            <h1>PENSUM X2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae,
+              blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis
+              purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+          </div>
+          <a class="popup__close" href="#">X</a>
+        </div>
+      </div>
+
+      <!-- S3 -->
+      <div class="s-box">
+        <!-- Img -->
+        <div class="s-b-img">
+          <!-- Type -->
+          <div class="s-type">Nombre programa</div>
+          <!-- Name -->
+          <img src="../images/undraw_developer_activity_bv83.png">
+        </div>
+        <!-- Text -->
+        <div class="s-b-text">
+          <a href="#popupx3">Pensum</a>
+        </div>
+      </div>
+
+      <!-- Modal pensum -->
+      <div class="popup" id="popupx3">
+        <div class="popup-inner">
+          <div class="popup__photo">
+            <img src="../images/pensum_img.jpg" alt="pensum_img">
+          </div>
+          <div class="popup__text">
+            <h1>PENSUM X3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae,
+              blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis
+              purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+          </div>
+          <a class="popup__close" href="#">X</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
+<script src="../js/c8e4d183c2.js" crossorigin="anonymous"></script>
+<script src="../js/JQuery3.3.1.js"></script>
+<script src="../js/codigo.js"></script>
+<script type="text/javascript">
+  /* Responsive navigation */
+  $(document).ready(function () {
+    $('.toggle').click(function () {
+      $('.toggle').toggleClass('active')
+      $('nav ul').toggleClass('active-menu')
+    })
+  });
+</script>
 
 </html>
