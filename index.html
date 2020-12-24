@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>WEB V.0.0.1</title>
+    <title>INDES - Principal</title>
     <meta http-equiv="X-UA-Compatible" content="IE-edgue">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Import img, title, css, fontAwesome -->
-    <link rel="stylesheet icon" href="images/icon.png">
+    <link rel="icon" href="images/classmates_communication_education_learning_media_networking_social_icon_123265.ico">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -17,7 +17,7 @@
 <body class="hidden">
 
     <!-- Botón flotante -->
-    <a href="#" class="btn-flotante"><i class="fab fa-whatsapp fa-2x"></i></a>
+    <a href="https://wa.link/grhezh" class="btn-flotante"><i class="fab fa-whatsapp fa-2x"></i></a>
 
     <!-- Loader -->
     <div class="centrado" id="onload">
@@ -30,27 +30,23 @@
     <!-- Principal -->
     <section id="main">
         <nav>
-            <!-- Logo instituto -->
-            <a href="#" class="logo">INSTITUTO (NAME)</a>
-
-            <!-- Menú -->
+            <a href="#main" class="animate__animated animate__pulse logo"><img src="./images/antorcha.png"
+                    alt="logo_indes" class="logo-indes" />NDES</a>
             <div class="toggle"></div>
             <ul class="menu">
-                <li class="active"><a href="#main">Inicio</a></li>
+                <li class="active"><a href="#main">Inicio </a></li>
                 <li><a href="#about">Conócenos</a></li>
                 <li><a href="#programas">Programas</a></li>
                 <li><a href="#b-estudiantes">Bienes/estudiantes</a></li>
+                <li><a href="#" onclick="retornoRequisitos();">Políticas</a></li>
                 <li><a href="#" onclick="retorno();">Revistas</a></li>
                 <li><a href="#contact-form">Contáctanos</a></li>
             </ul>
-            <!-- versión del sistema -->
-            <a href="javascript:void(0);" style="font-size: 11px; color: #292929;" id="beta">BETA 0.0.1 <i
-                    class="fab fa-github"></i></a>
         </nav>
         <!-- Informacián ins -->
         <div class="name">
             <p>Bienvenido</p>
-            <h1>Somos el <font color="#309EF5">Instituto (Insertar nombre)</font>
+            <h1>Somos el <font color="#309EF5">INSTITUTO INTERAMERICANO PARA EL DESARROLLO</font>
             </h1>
 
             <!-- Los detalles -->
@@ -64,7 +60,8 @@
         <div class="black-line"></div>
         <!-- Social -->
         <div class="animate__animated animate__pulse social">
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook"></i> </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-facebook-f facebook"></i> </a>
             <a href="#"><i class="fab fa-twitter twitter"></i> </a>
             <a href="#"><i class="fab fa-instagram instagram"></i></a>
             <a href="#" class="youtube"><i class="fab fa-youtube youtube"></i> </a>
@@ -74,12 +71,18 @@
     <section id="about">
         <div class="about-text">
             <h1 class="wow animate__animated animate__fadeInDown">Sobre nosotros.</h1>
-            <h2 class="wow animate__animated animate__fadeInDown">Instituto (#############)</h2>
-            <p class="wow animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Cumque voluptatem inventore saepe. Nesciunt
-                delectus ut in cupiditate, vero ipsa voluptatem recusandae porro. Earum temporibus labore maiores
-                officiis quis molestiae vel.</p>
-            <button>Ver más detalles</button>
+            <h2 class="wow animate__animated animate__fadeInDown">Formando hombres y mujeres para el ministerio.</h2>
+            <p class="wow animate__animated animate__fadeInDown">En convenio con la Fundación universitaria Seminario
+                Bíblico de Colombia FUSBC, hemos puesto a disposición al servicio de la iglesia de la región de Urabá
+                dos modalidades de estudio, Formación Bíblica y Pastoral y Misiologia; complementando a través de sus
+                estudios de extensión diplomados, cursos, seminarios, talleres y conferencias.</p><br>
+            <p class="wow animate__animated animate__fadeInDown efesios">“…a fin de perfeccionar a los santos para la
+                obra del ministerio, para la edificación del cuerpo de Cristo, hasta que todos lleguemos a la unidad de
+                la fe y del conocimiento del Hijo de Dios, a un varón perfecto, a la medida de la estatura de la
+                plenitud de Cristo…” Efesios 4: 12 – 13</p><br>
+            <button type="button" onclick="$(location).attr('href','./pages/nosotros.html');"
+                class="wow animate__animated animate__pulse">Ver más detalles <i
+                    class="fas fa-mouse-pointer"></i></button>
         </div>
         <!-- Model -->
         <div class="wow animate__animated animate__fadeInDown about-model">
@@ -101,9 +104,9 @@
                 <!-- Img -->
                 <div class="s-b-img">
                     <!-- Type -->
-                    <div class="s-type">Nombre programa</div>
+                    <div class="s-type">Aptitud ocupacional en formación bíblica y pastoral</div>
                     <!-- Name -->
-                    <img src="images/error.jpg">
+                    <img src="images/undraw_Bibliophile_hwqc.svg" alt="img_program">
                 </div>
                 <!-- Text -->
                 <div class="s-b-text">
@@ -116,9 +119,9 @@
                 <!-- Img -->
                 <div class="s-b-img">
                     <!-- Type -->
-                    <div class="s-type">Nombre programa</div>
+                    <div class="s-type">Diplomado en consejería pastoral </div>
                     <!-- Name -->
-                    <img src="images/error.jpg">
+                    <img src="images/undraw_studying_s3l7.svg" alt="img_program">
                 </div>
                 <!-- Text -->
                 <div class="s-b-text">
@@ -131,9 +134,9 @@
                 <!-- Img -->
                 <div class="s-b-img">
                     <!-- Type -->
-                    <div class="s-type">Nombre programa</div>
+                    <div class="s-type">Diplomado en pastoral juvenil</div>
                     <!-- Name -->
-                    <img src="images/error.jpg">
+                    <img src="images/undraw_book_lover_mkck.svg" alt="img_program">
                 </div>
                 <!-- Text -->
                 <div class="s-b-text">
@@ -146,40 +149,25 @@
 
 
         <div>
-            <a href="#" onclick="$(location).attr('href','./pages/programas.html');"" class=" cv-btn">Otros
+            <a href="#" onclick="$(location).attr('href','./pages/programas.html');" class=" cv-btn">Otros
                 programas</a>
-        </div>
+        </div><br>
+
         <!-- Modal de información para el pensum X1 -->
         <div class="popup" id="popupx1">
             <div class="popup-inner">
-                <div class="popup__photo">
-                    <img src="./images/pensum_img.jpg" alt="pensum_img">
-                </div>
-                <div class="popup__text">
-                    <h1>function program number1</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate
-                        vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius
-                        nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque
-                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros
-                        viverra pulvinar.</p>
-                </div>
+
+                <embed src="./Pensum/APTITUD OCUPACIONAL EN FORMACIÓN BÍBLICA Y PASTORAL.pdf" type="application/pdf"
+                    width="100%" height="600px">
+
                 <a class="popup__close" href="#programas">X</a>
             </div>
         </div>
         <!-- Modal de información para el pensum X2 -->
         <div class="popup" id="popupx2">
             <div class="popup-inner">
-                <div class="popup__photo">
-                    <img src="./images/pensum_img.jpg" alt="pensum_img">
-                </div>
-                <div class="popup__text">
-                    <h1>function program number2</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate
-                        vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius
-                        nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque
-                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros
-                        viverra pulvinar.</p>
-                </div>
+                <embed src="./Pensum/diplomado en consejería pastoral.pdf" type="application/pdf" width="100%"
+                    height="600px">
                 <a class="popup__close" href="#programas">X</a>
             </div>
         </div>
@@ -187,17 +175,8 @@
         <!-- Modal de información para el pensum X3 -->
         <div class="popup" id="popup">
             <div class="popup-inner">
-                <div class="popup__photo">
-                    <img src="./images/pensum_img.jpg" alt="pensum_img">
-                </div>
-                <div class="popup__text">
-                    <h1>function program number3</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate
-                        vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius
-                        nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque
-                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros
-                        viverra pulvinar.</p>
-                </div>
+                <embed src="./Pensum/diplomado en pastoral juvenil.pdf" type="application/pdf" width="100%"
+                    height="600px">
                 <a class="popup__close" href="#programas">X</a>
             </div>
         </div>
@@ -211,60 +190,64 @@
             <div class="p-box">
                 <div class="overlay-text">
                     <h1>Bienestar</h1>
-                    <p>Unreal Enguie</p>
+                    <p>Crear espacios en los que se promuevan la vivencia de los valores y principios cristianos.</p>
                 </div>
                 <!-- Img -->
-                <img src="images/error2.jpg" alt="">
+                <img src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
             </div>
 
             <!-- b.estudiantes 2 -->
             <div class="p-box">
                 <div class="overlay-text">
                     <h1>Bienestar</h1>
-                    <p>Unreal Enguie</p>
+                    <p>Comunicar la identidad de nuestra denominación IGLEICO como institución cristiana, a través de
+                        acciones que demuestren los atributos propios de ésta.</p>
                 </div>
                 <!-- Img -->
-                <img src="images/error2.jpg" alt="">
+                <img src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
             </div>
 
             <!-- b.estudiantes 3 -->
             <div class="p-box">
                 <div class="overlay-text">
                     <h1>Bienestar</h1>
-                    <p>Unreal Enguie</p>
+                    <p>Desarrollar una cultura en la que el prójimo sea reconocido y no ignorado.</p>
                 </div>
                 <!-- Img -->
-                <img src="images/error2.jpg" alt="">
+                <img src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
             </div>
 
             <!-- b.estudiantes 4 -->
             <div class="p-box">
                 <div class="overlay-text">
                     <h1>Bienestar</h1>
-                    <p>Unreal Enguie</p>
+                    <p>Hacer seguimiento a la comunidad estudiantil reconociendo las variables posibles de
+                        vulnerabilidad y adoptando estrategias que disminuyan la deserción.</p>
                 </div>
                 <!-- Img -->
-                <img src="images/error2.jpg" alt="">
+                <img src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
             </div>
 
             <!-- b.estudiantes 5 -->
             <div class="p-box">
                 <div class="overlay-text">
                     <h1>Bienestar</h1>
-                    <p>Unreal Enguie</p>
+                    <p>Establecer vínculos dentro de la comunidad y fuera de ella, que ayuden a proyectar una imagen de
+                        la FUNINDES, que sea adecuada y coherente con sus principios cristianos.</p>
                 </div>
                 <!-- Img -->
-                <img src="images/error2.jpg" alt="">
+                <img src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
             </div>
 
             <!-- b.estudiantes 6 -->
             <div class="p-box">
                 <div class="overlay-text">
                     <h1>Bienestar</h1>
-                    <p>Unreal Enguie</p>
+                    <p>Proveer herramientas para que la comunidad sea afectada y se proyecte en lo cultural, lo
+                        espiritual, lo psicoafectivo, lo social, la recreación y el deporte.</p>
                 </div>
                 <!-- Img -->
-                <img src="images/error2.jpg" alt="">
+                <img src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
             </div>
 
         </div>
@@ -279,7 +262,7 @@
     </section>
     <!-- Contact from -->
     <section id="contact-form">
-        <form action="./enviar.php" method="POST">
+        <form action="./enviar.php" method="POST" autocomplete="off">
             <!-- left -->
             <div class="contact-left">
                 <h1 class="c-1-heading">
@@ -316,11 +299,15 @@
                         <div class="course">
                             <div class="course-preview">
                                 <h6>Para más información</h6>
-                                <span><i class="far fa-paper-plane"></i> example@example.com</span>
-                                <span><i class="fas fa-mobile-alt"></i> 3xx-xxx-xxxx</span>                    
+                                <hr>
+                                <span><i class="far fa-paper-plane"></i> indesuraba@hotmail.com</span>
+                                <span><i class="fas fa-mobile-alt"></i> 320 694 7655 </span>
+                                <hr>
+                                <span><i class="fas fa-mobile-alt"></i> 314 682 8311 </span>
                             </div>
                             <div class="course-info">
                                 <h2>Derechos reservados &copy; Instituto 2020</h2>
+                                <code style="font-size: small; color: crimson;">Versión 0.0.1</code>
                             </div>
                         </div>
                     </div>
@@ -333,7 +320,7 @@
 
 <script src="./js/c8e4d183c2.js"></script>
 <script src="./js/wow.min.js"></script>
-<script src="./js/JQuery3.3.1.js"></script>
+<script src="./js/jquery-3.5.1.min.js"></script>
 <script src="./js/codigo.js"></script>
 <script type="text/javascript">
     /* Iniciar WOW */
@@ -345,18 +332,6 @@
             $('nav ul').toggleClass('active-menu')
         })
     });
-
-    const floating_btn = document.querySelector('.floating-btn');
-const close_btn = document.querySelector('.close-btn');
-const social_panel_container = document.querySelector('.social-panel-container');
-
-floating_btn.addEventListener('click', () => {
-	social_panel_container.classList.toggle('visible')
-});
-
-close_btn.addEventListener('click', () => {
-	social_panel_container.classList.remove('visible')
-});
 </script>
 
 </html>
