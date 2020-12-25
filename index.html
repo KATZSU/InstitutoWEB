@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="caracteres" charset="UTF-8">
     <title>INDES - Principal</title>
-    <meta http-equiv="X-UA-Compatible" content="IE-edgue">
+    <meta name="compatibilidad" http-equiv="X-UA-Compatible" content="IE-edgue">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Import img, title, css, fontAwesome -->
     <link rel="icon" href="images/classmates_communication_education_learning_media_networking_social_icon_123265.ico">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
@@ -15,10 +14,8 @@
 </head>
 
 <body class="hidden">
-
     <!-- Botón flotante -->
     <a href="https://wa.link/grhezh" class="btn-flotante"><i class="fab fa-whatsapp fa-2x"></i></a>
-
     <!-- Loader -->
     <div class="centrado" id="onload">
         <div class="lds-ripple">
@@ -26,7 +23,6 @@
             <div></div>
         </div>
     </div>
-
     <!-- Principal -->
     <section id="main">
         <nav>
@@ -46,15 +42,13 @@
         <!-- Informacián ins -->
         <div class="name">
             <p>Bienvenido</p>
-            <h1>Somos el <font color="#309EF5">INSTITUTO INTERAMERICANO PARA EL DESARROLLO</font>
+            <h1>Somos el <font style="color: #1472bb; font-weight: bold;">INSTITUTO INTERAMERICANO PARA EL DESARROLLO</font>
             </h1>
-
             <!-- Los detalles -->
             <p class="animate__animated animate__pulse details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Repellat maiores dolore placeat
                 non doloribus magnam saepe minus totam reprehenderit error? Ipsa doloremque et dolor saepe nihil sit
                 tempore unde nostrum?</p>
-
             <a href="#" class="cv-btn">Instituto</a>
         </div>
         <div class="black-line"></div>
@@ -86,10 +80,9 @@
         </div>
         <!-- Model -->
         <div class="wow animate__animated animate__fadeInDown about-model">
-            <img src="images/about-model.png" alt="model">
+            <img src="images/about-model.webp" alt="model">
         </div>
     </section>
-
     <!-- Programas -->
     <section id="programas">
         <!-- Heading -->
@@ -113,7 +106,6 @@
                     <a href="#popupx1">Pensum</a>
                 </div>
             </div>
-
             <!-- S2 -->
             <div class="s-box">
                 <!-- Img -->
@@ -128,7 +120,6 @@
                     <a href="#popupx2">Pensum</a>
                 </div>
             </div>
-
             <!-- S3 -->
             <div class="s-box">
                 <!-- Img -->
@@ -143,20 +134,14 @@
                     <a href="#popup">Pensum</a>
                 </div>
             </div>
-
-
         </div>
-
-
         <div>
             <a href="#" onclick="$(location).attr('href','./pages/programas.html');" class=" cv-btn">Otros
                 programas</a>
         </div><br>
-
         <!-- Modal de información para el pensum X1 -->
         <div class="popup" id="popupx1">
             <div class="popup-inner">
-
                 <embed src="./Pensum/APTITUD OCUPACIONAL EN FORMACIÓN BÍBLICA Y PASTORAL.pdf" type="application/pdf"
                     width="100%" height="600px">
 
@@ -171,7 +156,6 @@
                 <a class="popup__close" href="#programas">X</a>
             </div>
         </div>
-
         <!-- Modal de información para el pensum X3 -->
         <div class="popup" id="popup">
             <div class="popup-inner">
@@ -181,7 +165,6 @@
             </div>
         </div>
     </section>
-
     <!-- b.estudiantes -->
     <section id="b-estudiantes">
         <h1 class="wow animate__animated animate__fadeInDown p-headind">Bienes / Estudiantes</h1>
@@ -195,7 +178,6 @@
                 <!-- Img -->
                 <img src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
             </div>
-
             <!-- b.estudiantes 2 -->
             <div class="p-box">
                 <div class="overlay-text">
@@ -206,7 +188,6 @@
                 <!-- Img -->
                 <img src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
             </div>
-
             <!-- b.estudiantes 3 -->
             <div class="p-box">
                 <div class="overlay-text">
@@ -216,7 +197,6 @@
                 <!-- Img -->
                 <img src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
             </div>
-
             <!-- b.estudiantes 4 -->
             <div class="p-box">
                 <div class="overlay-text">
@@ -227,7 +207,6 @@
                 <!-- Img -->
                 <img src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
             </div>
-
             <!-- b.estudiantes 5 -->
             <div class="p-box">
                 <div class="overlay-text">
@@ -238,7 +217,6 @@
                 <!-- Img -->
                 <img src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
             </div>
-
             <!-- b.estudiantes 6 -->
             <div class="p-box">
                 <div class="overlay-text">
@@ -249,10 +227,8 @@
                 <!-- Img -->
                 <img src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
             </div>
-
         </div>
     </section>
-
     <!-- Contacto -->
     <section id="contact-btn">
         <!-- heading -->
@@ -269,18 +245,18 @@
                     <font style="border-bottom: 3px solid #63D9FF;">Escríbenos</font>
                 </h1>
                 <div class="f-name">
-                    <font>Nombre</font>
+                    <label for=""> <font>Nombre</font></label>
                     <input type="text" name="customer_name" placeholder="Nombre completo" />
                 </div>
                 <div class="f-email">
-                    <font>Email</font>
+                    <label for=""><font>Email</font></label>
                     <input type="email" name="customer_email" placeholder="Example@gmail.com" />
                 </div>
             </div>
             <!-- right -->
             <div class="contact-right">
                 <div class="message">
-                    <font>Mensaje</font>
+                    <label for=""><font>Mensaje</font></label>
                     <textarea name="customer_message" id="" cols="20" rows="5" placeholder="Escribe algo..."></textarea>
                 </div>
                 <!-- Submit -->
@@ -288,7 +264,6 @@
             </div>
         </form>
     </section>
-
     <!-- Footer -->
     <div class="footer">
         <div id="button"></div>
@@ -298,7 +273,7 @@
                     <div class="courses-container">
                         <div class="course">
                             <div class="course-preview">
-                                <h6>Para más información</h6>
+                                <h1>Para más información</h1>
                                 <hr>
                                 <span><i class="far fa-paper-plane"></i> indesuraba@hotmail.com</span>
                                 <span><i class="fas fa-mobile-alt"></i> 320 694 7655 </span>
@@ -333,5 +308,4 @@
         })
     });
 </script>
-
 </html>
