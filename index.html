@@ -9,7 +9,7 @@
     <!-- Import img, title, css, fontAwesome -->
     <link rel="icon" href="images/classmates_communication_education_learning_media_networking_social_icon_123265.ico">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
 </head>
 
@@ -26,7 +26,7 @@
     <!-- Principal -->
     <section id="main">
         <nav>
-            <a href="#main" class="animate__animated animate__pulse logo"><img src="./images/antorcha.png"
+            <a href="#main" class="animate__animated animate__pulse logo"><img src="./images/antorcha.webp"
                     alt="logo_indes" class="logo-indes" />NDES</a>
             <div class="toggle"></div>
             <ul class="menu">
@@ -42,7 +42,8 @@
         <!-- Informacián ins -->
         <div class="name">
             <p>Bienvenido</p>
-            <h1>Somos el <font style="color: #1472bb; font-weight: bold;">INSTITUTO INTERAMERICANO PARA EL DESARROLLO</font>
+            <h1>Somos el <font style="color: #1472bb; font-weight: bold;">INSTITUTO INTERAMERICANO PARA EL DESARROLLO
+                </font>
             </h1>
             <!-- Los detalles -->
             <p class="animate__animated animate__pulse details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -75,11 +76,11 @@
                 la fe y del conocimiento del Hijo de Dios, a un varón perfecto, a la medida de la estatura de la
                 plenitud de Cristo…” Efesios 4: 12 – 13</p><br>
             <button type="button" onclick="$(location).attr('href','./pages/nosotros.html');"
-                class="wow animate__animated animate__pulse">Ver más detalles <i
+                class="wow animate__animated animate__fadeInLeft">Ver más detalles <i
                     class="fas fa-mouse-pointer"></i></button>
         </div>
         <!-- Model -->
-        <div class="wow animate__animated animate__fadeInDown about-model">
+        <div class="wow animate__animated animate__fadeInRight about-model">
             <img src="images/about-model.webp" alt="model">
         </div>
     </section>
@@ -245,18 +246,24 @@
                     <font style="border-bottom: 3px solid #63D9FF;">Escríbenos</font>
                 </h1>
                 <div class="f-name">
-                    <label for=""> <font>Nombre</font></label>
+                    <label for="">
+                        <font>Nombre</font>
+                    </label>
                     <input type="text" name="customer_name" placeholder="Nombre completo" />
                 </div>
                 <div class="f-email">
-                    <label for=""><font>Email</font></label>
+                    <label for="">
+                        <font>Email</font>
+                    </label>
                     <input type="email" name="customer_email" placeholder="Example@gmail.com" />
                 </div>
             </div>
             <!-- right -->
             <div class="contact-right">
                 <div class="message">
-                    <label for=""><font>Mensaje</font></label>
+                    <label for="">
+                        <font>Mensaje</font>
+                    </label>
                     <textarea name="customer_message" id="" cols="20" rows="5" placeholder="Escribe algo..."></textarea>
                 </div>
                 <!-- Submit -->
@@ -308,4 +315,5 @@
         })
     });
 </script>
+
 </html>
