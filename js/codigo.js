@@ -9,5 +9,9 @@ function retornoIndex() {
   window.location.href = "../index.html";
 }
 function retornoRequisitos() {
-  window.location.href = "./pages/requisitos.html";
+  window.location.href = "./pages/bienestar.html";
 }
+$('#menu li').on('click', function(){
+  $('li.active').removeClass('active');
+  $(this).addClass('active');
+});

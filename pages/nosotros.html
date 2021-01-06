@@ -10,6 +10,7 @@
     <!-- Import img, title, css, fontAwesome -->
     <link rel="stylesheet icon"
         href="../images/classmates_communication_education_learning_media_networking_social_icon_123265.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="../css/modalNo.css">
     <link rel="stylesheet" type="text/css" href="../css/styleNo.css">
     <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
@@ -23,13 +24,87 @@
             <div></div>
         </div>
     </div>
+    <a href="#" onclick="retornoIndex();" class="btn-flotante"><img src="https://img.icons8.com/fluent/20/000000/back.png"/></a>
+    <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="../images/brainstorming_.svg" alt="img-slide">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">¿QUIENES SOMOS?</span>
+                  <div class="blog-slider__title">Misión.</div>
+                  <div class="blog-slider__text">Somos una institución confesional cristiana que, en
+                    obediencia a un llamamiento divino y con fundamento en la Biblia, aporta a la formación integral con
+                    alta calidad académica de personas comprometidas con Dios, la iglesia y la sociedad.</div>
+                    <div class="blog-slider__title">Visión.</div>
+                    <div class="blog-slider__text">Somos una Consolidarnos como un modelo de servicio a Dios,
+                la iglesia y la sociedad, caracterizado por una oferta académica y formativa de alta calidad.</div>
+                </div>
+              </div>
+            <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                    <img src="../images/brainstorming_.svg" alt="img-slide">
+                </div>
+                <div class="blog-slider__content">
+                  <div class="blog-slider__title">Valores</div>
+                  <div class="blog-slider__text">Los valores medulares de la FUNINDES señalan convicciones generales, no negociables, que definen
+                    el carácter de la institución y orientan su pensamiento y acción, tanto a nivel individual como
+                    colectivo. Estos se fundamentan en principios de las Sagradas Escrituras, nuestra norma de fe y
+                    conducta. Se refieren al comportamiento que se espera de los miembros de la comunidad educativa
+                    y definen claramente criterios primordiales para la toma de decisiones en la FUNINDES. Su
+                    finalidad es fortalecer la conducta ética por medio de su práctica y exigencia. El compromiso y
+                    persistencia con que nos apropiemos de ellos en la cotidianidad contribuirán a fomentar la
+                    excelencia en todos los procesos propios de la misión institucional: docencia, prácticas,
+                    investigación, extensión, administrativos y de proyección social.</div>
+                </div>
+              </div>
 
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              
+                <img src="../images/brainstorming_.svg" alt="img-slide">
+            </div>
+            <div class="blog-slider__content">
+              <div class="blog-slider__title">Nuestros Objetivos.</div>
+              <a href="#objetivos" class="blog-slider__button">Saber más...</a>
+            </div>
+          </div> 
+        </div>
+        <div class="blog-slider__pagination"></div>
+      </div>
+
+      <div class="popup" id="objetivos">
+        <div class="popup-inner">
+            <div class="popup__photo">
+                <img src="../images/pixeltrue-vision-1.svg" alt="pensum_img">
+            </div>
+            <div class="popup__text">
+                <h1>Objetivos.</h1>
+                <p class="general">GENERAL:Formar integralmente al estudiante para que, mediante la apropiación y
+                    vivencia de los principios bíblicos, pueda gobernar su propia vida y afectar positivamente su
+                    entorno.</p><br>
+                <p class="especificos">ESPECIFICOS:<br>
+                    <i class="fas fa-check-circle"></i>Desarrollar programas que sobre la base de sólidos principios
+                    cristianos, permitan al estudiante alcanzar su pleno desarrollo y lo faculten para enfrentarse
+                    con madurez y ética a los grandes retos del siglo XXI.<br>
+                    <i class="fas fa-check-circle"></i>Desarrollar en el estudiante capacidades de liderazgo,
+                    habilidades de expresión y comunicación y conciencia ética, que le permitan ser participante
+                    activo del cambio político, económico, tecnológico, científico y social del país.<br>
+                    <i class="fas fa-check-circle"></i>Promover el desarrollo espiritual partiendo del amor a Dios y
+                    al prójimo y de la ejercitación de una fe con obras.<br>
+                    <i class="fas fa-check-circle"></i>Desarrollar un espíritu investigativo para que a partir del
+                    análisis crítico y haciendo buen uso de la tecnología, se planteen alternativas de solución a
+                    los problemas de la sociedad actual.
+                </p>
+            </div>
+            <a class="popup__close" href="#"><i class="fas fa-times"></i></a>
+        </div>
+    </div>
     <!-- Principal -->
-    <section id="main">
+    <!-- <section id="main">
         <nav>
-            <!-- Logo instituto -->
             <a href="#main" class="logo"><img src="../images/antorcha.webp" alt="logo_indes" class="logo-indes">NDES</a>
-            <!-- Menú -->
             <div class="toggle"></div>
             <ul class="menu">
                 <li>
@@ -38,7 +113,6 @@
             </ul>
         </nav>
     </section>
-    <!-- Sobre -->
     <section id="about">
         <div class="about-text">
             <h1 class="animate__animated animate__fadeInDown">¿QUIENES SOMOS?</h1>
@@ -101,16 +175,16 @@
                 </div>
                 <a class="popup__close" href="#"><i class="fas fa-times"></i></a>
             </div>
-        </div>
+        </div> -->
 
         <!-- Model -->
         <div class="animate__animated animate__fadeInDown about-model">
-            <img src="../images/team_meeting.svg" alt="model">
+            <img src="../images/brainstorming_.svg" alt="model">
         </div>
     </section>
 
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
 <script src="../js/c8e4d183c2.min.js"></script>
 <script src="../js/wow.min.js"></script>
 <script src="../js/jquery-3.5.1.min.js"></script>
@@ -125,7 +199,19 @@
             $('nav ul').toggleClass('active-menu')
         })
     });
-
+    var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
 </script>
 
 </html>

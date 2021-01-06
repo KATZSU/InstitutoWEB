@@ -12,5 +12,6 @@ ExpiresByType application/x-javascript "access 1 month"
 ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 2 days"
+Set-Cookie: promo_shown=1; SameSite=Lax
 </IfModule>
 ## EXPIRES CACHING ##

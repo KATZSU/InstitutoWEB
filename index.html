@@ -2,275 +2,281 @@
 <html lang="en">
 
 <head>
-    <meta name="caracteres" charset="UTF-8">
+    <meta name="caracteres" content="caracteres" charset="UTF-8">
     <title>INDES - Principal</title>
     <meta name="compatibilidad" http-equiv="X-UA-Compatible" content="IE-edgue">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Import img, title, css, fontAwesome -->
-    <link rel="icon" href="images/classmates_communication_education_learning_media_networking_social_icon_123265.ico">
-    <link rel="stylesheet" type="text/css" href="css/modal.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="icon"
+        href="./images/classmates_communication_education_learning_media_networking_social_icon_123265.ico">
+    <link rel="stylesheet" type="text/css" href="./css/modal.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
 </head>
 
-<body class="hidden">
+<body class="">
     <!-- Botón flotante -->
     <a href="https://wa.link/grhezh" class="btn-flotante"><i class="fab fa-whatsapp fa-2x"></i></a>
     <!-- Loader -->
-    <div class="centrado" id="onload">
-        <div class="lds-ripple">
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <!-- Principal -->
-    <section id="main">
-        <nav>
-            <a href="#main" class="animate__animated animate__pulse logo"><img src="./images/antorcha.webp"
-                    alt="logo_indes" class="logo-indes" />NDES</a>
-            <div class="toggle"></div>
-            <ul class="menu">
-                <li class="active"><a href="#main">Inicio </a></li>
-                <li><a href="#about">Conócenos</a></li>
-                <li><a href="#programas">Programas</a></li>
-                <li><a href="#b-estudiantes">Bienes/estudiantes</a></li>
-                <li><a href="#" onclick="retornoRequisitos();">Políticas</a></li>
-                <li><a href="#" onclick="retorno();">Revistas</a></li>
-                <li><a href="#contact-form">Contáctanos</a></li>
-            </ul>
-        </nav>
-        <!-- Informacián ins -->
-        <div class="name">
-            <p>Bienvenido</p>
-            <h1>Somos el <font style="color: #1472bb; font-weight: bold;">INSTITUTO INTERAMERICANO PARA EL DESARROLLO
-                </font>
-            </h1>
-            <!-- Los detalles -->
-            <p class="animate__animated animate__pulse details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellat maiores dolore placeat
-                non doloribus magnam saepe minus totam reprehenderit error? Ipsa doloremque et dolor saepe nihil sit
-                tempore unde nostrum?</p>
-            <a href="#" class="cv-btn">Instituto</a>
-        </div>
-        <div class="black-line"></div>
-        <!-- Social -->
-        <div class="animate__animated animate__pulse social">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-facebook-f facebook"></i> </a>
-            <a href="#"><i class="fab fa-twitter twitter"></i> </a>
-            <a href="#"><i class="fab fa-instagram instagram"></i></a>
-            <a href="#" class="youtube"><i class="fab fa-youtube youtube"></i> </a>
-        </div>
-    </section>
-    <!-- Sobre -->
-    <section id="about">
-        <div class="about-text">
-            <h1 class="wow animate__animated animate__fadeInDown">Sobre nosotros.</h1>
-            <h2 class="wow animate__animated animate__fadeInDown">Formando hombres y mujeres para el ministerio.</h2>
-            <p class="wow animate__animated animate__fadeInDown">En convenio con la Fundación universitaria Seminario
-                Bíblico de Colombia FUSBC, hemos puesto a disposición al servicio de la iglesia de la región de Urabá
-                dos modalidades de estudio, Formación Bíblica y Pastoral y Misiologia; complementando a través de sus
-                estudios de extensión diplomados, cursos, seminarios, talleres y conferencias.</p><br>
-            <p class="wow animate__animated animate__fadeInDown efesios">“…a fin de perfeccionar a los santos para la
-                obra del ministerio, para la edificación del cuerpo de Cristo, hasta que todos lleguemos a la unidad de
-                la fe y del conocimiento del Hijo de Dios, a un varón perfecto, a la medida de la estatura de la
-                plenitud de Cristo…” Efesios 4: 12 – 13</p><br>
-            <button type="button" onclick="$(location).attr('href','./pages/nosotros.html');"
-                class="wow animate__animated animate__fadeInLeft">Ver más detalles <i
-                    class="fas fa-mouse-pointer"></i></button>
-        </div>
-        <!-- Model -->
-        <div class="wow animate__animated animate__fadeInRight about-model">
-            <img loading="lazy" src="images/about-model.webp" alt="model">
-        </div>
-    </section>
-    <!-- Programas -->
-    <section id="programas">
-        <!-- Heading -->
-        <div class="wow animate__animated animate__fadeInDown s-heading">
-            <h1>Programas</h1>
-            <p>Cursos disponibles</p>
-        </div>
-        <!-- Contenedor de programas -->
-        <div class="wow animate__animated animate__pulse b-container">
-            <!-- S1 -->
-            <div class="s-box">
-                <!-- Img -->
-                <div class="s-b-img">
-                    <!-- Type -->
-                    <div class="s-type">Aptitud ocupacional en formación bíblica y pastoral</div>
-                    <!-- Name -->
-                    <img loading="lazy" src="images/undraw_Bibliophile_hwqc.svg" alt="img_program">
-                </div>
-                <!-- Text -->
-                <div class="s-b-text">
-                    <a href="#popupx1">Pensum</a>
-                </div>
-            </div>
-            <!-- S2 -->
-            <div class="s-box">
-                <!-- Img -->
-                <div class="s-b-img">
-                    <!-- Type -->
-                    <div class="s-type">Diplomado en consejería pastoral </div>
-                    <!-- Name -->
-                    <img loading="lazy" src="images/undraw_studying_s3l7.svg" alt="img_program">
-                </div>
-                <!-- Text -->
-                <div class="s-b-text">
-                    <a href="#popupx2">Pensum</a>
-                </div>
-            </div>
-            <!-- S3 -->
-            <div class="s-box">
-                <!-- Img -->
-                <div class="s-b-img">
-                    <!-- Type -->
-                    <div class="s-type">Diplomado en pastoral juvenil</div>
-                    <!-- Name -->
-                    <img loading="lazy" src="images/undraw_book_lover_mkck.svg" alt="img_program">
-                </div>
-                <!-- Text -->
-                <div class="s-b-text">
-                    <a href="#popup">Pensum</a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <a href="#" onclick="$(location).attr('href','./pages/programas.html');" class=" cv-btn">Otros
-                programas</a>
-        </div><br>
-        <!-- Modal de información para el pensum X1 -->
-        <div class="popup" id="popupx1">
-            <div class="popup-inner">
-                <embed src="./Pensum/APTITUD OCUPACIONAL EN FORMACIÓN BÍBLICA Y PASTORAL.pdf" type="application/pdf"
-                    width="100%" height="600px">
-
-                <a class="popup__close" href="#programas">X</a>
-            </div>
-        </div>
-        <!-- Modal de información para el pensum X2 -->
-        <div class="popup" id="popupx2">
-            <div class="popup-inner">
-                <embed src="./Pensum/diplomado en consejería pastoral.pdf" type="application/pdf" width="100%"
-                    height="600px">
-                <a class="popup__close" href="#programas">X</a>
-            </div>
-        </div>
-        <!-- Modal de información para el pensum X3 -->
-        <div class="popup" id="popup">
-            <div class="popup-inner">
-                <embed src="./Pensum/diplomado en pastoral juvenil.pdf" type="application/pdf" width="100%"
-                    height="600px">
-                <a class="popup__close" href="#programas">X</a>
-            </div>
-        </div>
-    </section>
-    <!-- b.estudiantes -->
-    <section id="b-estudiantes">
-        <h1 class="wow animate__animated animate__fadeInDown p-headind">Bienes / Estudiantes</h1>
-        <!-- Container -->
-        <div class="wow animate__animated animate__pulse p-container">
-            <div class="p-box">
-                <div class="overlay-text">
-                    <h1>Bienestar</h1>
-                    <p>Crear espacios en los que se promuevan la vivencia de los valores y principios cristianos.</p>
-                </div>
-                <!-- Img -->
-                <img loading="lazy" src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
-            </div>
-            <!-- b.estudiantes 2 -->
-            <div class="p-box">
-                <div class="overlay-text">
-                    <h1>Bienestar</h1>
-                    <p>Comunicar la identidad de nuestra denominación IGLEICO como institución cristiana, a través de
-                        acciones que demuestren los atributos propios de ésta.</p>
-                </div>
-                <!-- Img -->
-                <img loading="lazy" src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
-            </div>
-            <!-- b.estudiantes 3 -->
-            <div class="p-box">
-                <div class="overlay-text">
-                    <h1>Bienestar</h1>
-                    <p>Desarrollar una cultura en la que el prójimo sea reconocido y no ignorado.</p>
-                </div>
-                <!-- Img -->
-                <img loading="lazy" src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
-            </div>
-            <!-- b.estudiantes 4 -->
-            <div class="p-box">
-                <div class="overlay-text">
-                    <h1>Bienestar</h1>
-                    <p>Hacer seguimiento a la comunidad estudiantil reconociendo las variables posibles de
-                        vulnerabilidad y adoptando estrategias que disminuyan la deserción.</p>
-                </div>
-                <!-- Img -->
-                <img loading="lazy" src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
-            </div>
-            <!-- b.estudiantes 5 -->
-            <div class="p-box">
-                <div class="overlay-text">
-                    <h1>Bienestar</h1>
-                    <p>Establecer vínculos dentro de la comunidad y fuera de ella, que ayuden a proyectar una imagen de
-                        la FUNINDES, que sea adecuada y coherente con sus principios cristianos.</p>
-                </div>
-                <!-- Img -->
-                <img loading="lazy" src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
-            </div>
-            <!-- b.estudiantes 6 -->
-            <div class="p-box">
-                <div class="overlay-text">
-                    <h1>Bienestar</h1>
-                    <p>Proveer herramientas para que la comunidad sea afectada y se proyecte en lo cultural, lo
-                        espiritual, lo psicoafectivo, lo social, la recreación y el deporte.</p>
-                </div>
-                <!-- Img -->
-                <img loading="lazy" src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
-            </div>
-        </div>
-    </section>
-    <!-- Contacto -->
-    <section id="contact-btn">
-        <!-- heading -->
-        <h1 class="c-b-heading">Contacte con nosotros</h1>
-        <!-- btn -->
-        <button id="btn-email">Envíanos un Email <i class="fas fa-level-down-alt"></i></button>
-    </section>
-    <!-- Contact from -->
-    <section id="contact-form">
-        <form action="./enviar.php" method="POST" autocomplete="off">
-            <!-- left -->
-            <div class="contact-left">
-                <h1 class="c-1-heading">
-                    <font style="border-bottom: 3px solid #63D9FF;">Escríbenos</font>
+    <main>
+        <!-- Principal -->
+        <section id="main">
+            <nav id="nav">
+                <a href="#main" class="animate__animated animate__pulse logo"><img src="./images/antorcha.webp"
+                        alt="logo_indes" class="logo-indes" />NDES</a>
+                <div class="toggle"></div>
+                <ul class="menu" id="menu">
+                    <li class="active"><a href="#main">Inicio </a></li>
+                    <li><a href="#about">Conócenos</a></li>
+                    <li><a href="#programas">Programas</a></li>
+                    <li><a href="#b-estudiantes">Estudiantes</a></li>
+                    <li><a href="#" onclick="retornoRequisitos();">Bienestar</a></li>
+                    <li><a href="#" onclick="retorno();">Revistas</a></li>
+                    <li><a href="#contact-form">Contáctanos</a></li>
+                </ul>
+            </nav>
+            <!-- Informacián ins -->
+            <div class="name">
+                <p>Bienvenido</p>
+                <h1>Somos el <font style="color: #1472bb; font-weight: bold;">INSTITUTO INTERAMERICANO PARA EL
+                        DESARROLLO
+                    </font>
                 </h1>
-                <div class="f-name">
-                    <label for="">
-                        <font>Nombre</font>
-                    </label>
-                    <input type="text" name="customer_name" placeholder="Nombre completo" />
+                <!-- Los detalles -->
+                <p class="animate__animated animate__pulse details">
+                    En convenio con la Fundación universitaria Seminario
+                    Bíblico de Colombia FUSBC, hemos puesto a disposición al servicio de la iglesia de la región de
+                    Urabá
+                    dos modalidades de estudio, Formación Bíblica y Pastoral y Misiologia; complementando a través de
+                    sus
+                    estudios de extensión diplomados, cursos, seminarios, talleres y conferencias. <img loading="lazy"
+                        src="https://img.icons8.com/material-rounded/24/4a90e2/verified-account.png" />
+                </p>
+            </div>
+            <div class="black-line"></div>
+            <!-- Social -->
+            <div class="animate__animated animate__pulse social">
+                <a href="https://www.facebook.com/educacion.igleico" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-facebook-f facebook"></i> </a>
+                <a href="#"><i class="fab fa-twitter twitter"></i> </a>
+                <a href="#"><i class="fab fa-instagram instagram"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube youtube"></i> </a>
+            </div>
+        </section>
+        <!-- Sobre -->
+        <section id="about">
+            <div class="about-text">
+                <h1 class="wow animate__animated animate__fadeInDown">Sobre nosotros.</h1>
+                <h2 class="wow animate__animated animate__fadeInDown">Formando hombres y mujeres para el ministerio.
+                </h2>
+                <br>
+                <p class="wow animate__animated animate__fadeInDown efesios">“…a fin de perfeccionar a los santos para
+                    la
+                    obra del ministerio, para la edificación del cuerpo de Cristo, hasta que todos lleguemos a la unidad
+                    de
+                    la fe y del conocimiento del Hijo de Dios, a un varón perfecto, a la medida de la estatura de la
+                    plenitud de Cristo…” Efesios 4: 12 – 13</p><br>
+                <button type="button" onclick="$(location).attr('href','./pages/nosotros.html');"
+                    class="wow animate__animated animate__fadeInLeft">Ver más detalles <i
+                        class="fas fa-mouse-pointer"></i></button>
+            </div>
+            <!-- Model -->
+            <div class="wow animate__animated animate__fadeInRight about-model">
+                <img loading="lazy" src="images/about-model.webp" alt="model">
+            </div>
+        </section>
+        <!-- Programas -->
+        <section id="programas">
+            <!-- Heading -->
+            <div class="wow animate__animated animate__fadeInDown s-heading">
+                <h1>Programas</h1>
+                <p>Cursos disponibles</p>
+            </div>
+            <!-- Contenedor de programas -->
+            <div class="wow animate__animated animate__pulse b-container">
+                <!-- S1 -->
+                <div class="s-box">
+                    <!-- Img -->
+                    <div class="s-b-img">
+                        <!-- Type -->
+                        <div class="s-type">Aptitud ocupacional en formación bíblica y pastoral</div>
+                        <!-- Name -->
+                        <img loading="lazy" src="images/undraw_Bibliophile_hwqc.svg" alt="img_program">
+                    </div>
+                    <!-- Text -->
+                    <div class="s-b-text">
+                        <a href="#popupx1">Pensum</a>
+                    </div>
                 </div>
-                <div class="f-email">
-                    <label for="">
-                        <font>Email</font>
-                    </label>
-                    <input type="email" name="customer_email" placeholder="Example@gmail.com" />
+                <!-- S2 -->
+                <div class="s-box">
+                    <!-- Img -->
+                    <div class="s-b-img">
+                        <!-- Type -->
+                        <div class="s-type">Diplomado en consejería pastoral </div>
+                        <!-- Name -->
+                        <img loading="lazy" src="images/undraw_studying_s3l7.svg" alt="img_program">
+                    </div>
+                    <!-- Text -->
+                    <div class="s-b-text">
+                        <a href="#popupx2">Pensum</a>
+                    </div>
+                </div>
+                <!-- S3 -->
+                <div class="s-box">
+                    <!-- Img -->
+                    <div class="s-b-img">
+                        <!-- Type -->
+                        <div class="s-type">Diplomado en pastoral juvenil</div>
+                        <!-- Name -->
+                        <img loading="lazy" src="images/undraw_book_lover_mkck.svg" alt="img_program">
+                    </div>
+                    <!-- Text -->
+                    <div class="s-b-text">
+                        <a href="#popup">Pensum</a>
+                    </div>
                 </div>
             </div>
-            <!-- right -->
-            <div class="contact-right">
-                <div class="message">
-                    <label for="">
-                        <font>Mensaje</font>
-                    </label>
-                    <textarea name="customer_message" id="" cols="20" rows="5" placeholder="Escribe algo..."></textarea>
+            <div>
+                <a href="#" onclick="$(location).attr('href','./pages/programas.html');" class=" cv-btn">Otros
+                    programas</a>
+            </div><br>
+            <!-- Modal de información para el docs X1 -->
+            <div class="popup" id="popupx1">
+                <div class="popup-inner">
+                    <embed src="./docs/APTITUD OCUPACIONAL EN FORMACIÓN BÍBLICA Y PASTORAL.pdf#toolbar=0"
+                        type="application/pdf" width="100%" height="600px">
+
+                    <a class="popup__close" href="#programas">X</a>
                 </div>
-                <!-- Submit -->
-                <button type="submit">ENVIAR</button>
             </div>
-        </form>
-    </section>
+            <!-- Modal de información para el pensum X2 -->
+            <div class="popup" id="popupx2">
+                <div class="popup-inner">
+                    <object data="./docs/diplomado en consejería pastoral.pdf#toolbar=0" type="application/pdf"
+                        width="100%" height="600px"></object>
+                    <a class="popup__close" href="#programas">X</a>
+                </div>
+            </div>
+            <!-- Modal de información para el pensum X3 -->
+            <div class="popup" id="popup">
+                <div class="popup-inner">
+                    <object data="./docs/diplomado en pastoral juvenil.pdf#toolbar=0" type="application/pdf"
+                        width="100%" height="600px"></object>
+                    <a class="popup__close" href="#programas">X</a>
+                </div>
+            </div>
+        </section>
+        <!-- b.estudiantes -->
+        <section id="b-estudiantes">
+            <h1 class="wow animate__animated animate__fadeInDown p-headind">Bienes / Estudiantes</h1>
+            <!-- Container -->
+            <div class="wow animate__animated animate__pulse p-container">
+                <div class="p-box">
+                    <div class="overlay-text">
+                        <h1>Bienestar</h1>
+                        <p>Crear espacios en los que se promuevan la vivencia de los valores y principios cristianos.
+                        </p>
+                    </div>
+                    <!-- Img -->
+                    <img loading="lazy" src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
+                </div>
+                <!-- b.estudiantes 2 -->
+                <div class="p-box">
+                    <div class="overlay-text">
+                        <h1>Bienestar</h1>
+                        <p>Comunicar la identidad de nuestra denominación IGLEICO como institución cristiana, a través
+                            de
+                            acciones que demuestren los atributos propios de ésta.</p>
+                    </div>
+                    <!-- Img -->
+                    <img loading="lazy" src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
+                </div>
+                <!-- b.estudiantes 3 -->
+                <div class="p-box">
+                    <div class="overlay-text">
+                        <h1>Bienestar</h1>
+                        <p>Desarrollar una cultura en la que el prójimo sea reconocido y no ignorado.</p>
+                    </div>
+                    <!-- Img -->
+                    <img loading="lazy" src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
+                </div>
+                <!-- b.estudiantes 4 -->
+                <div class="p-box">
+                    <div class="overlay-text">
+                        <h1>Bienestar</h1>
+                        <p>Hacer seguimiento a la comunidad estudiantil reconociendo las variables posibles de
+                            vulnerabilidad y adoptando estrategias que disminuyan la deserción.</p>
+                    </div>
+                    <!-- Img -->
+                    <img loading="lazy" src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
+                </div>
+                <!-- b.estudiantes 5 -->
+                <div class="p-box">
+                    <div class="overlay-text">
+                        <h1>Bienestar</h1>
+                        <p>Establecer vínculos dentro de la comunidad y fuera de ella, que ayuden a proyectar una imagen
+                            de
+                            la FUNINDES, que sea adecuada y coherente con sus principios cristianos.</p>
+                    </div>
+                    <!-- Img -->
+                    <img loading="lazy" src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
+                </div>
+                <!-- b.estudiantes 6 -->
+                <div class="p-box">
+                    <div class="overlay-text">
+                        <h1>Bienestar</h1>
+                        <p>Proveer herramientas para que la comunidad sea afectada y se proyecte en lo cultural, lo
+                            espiritual, lo psicoafectivo, lo social, la recreación y el deporte.</p>
+                    </div>
+                    <!-- Img -->
+                    <img loading="lazy" src="images/pixeltrue-meditation-1.svg" alt="bienes_estudiantes">
+                </div>
+            </div>
+        </section>
+        <!-- Contacto -->
+        <section id="contact-btn">
+            <!-- heading -->
+            <h1 class="c-b-heading">Contacte con nosotros</h1>
+            <!-- btn -->
+            <button id="btn-email">Envíanos un Email <i class="fas fa-level-down-alt"></i></button>
+        </section>
+        <!-- Contact from -->
+        <section id="contact-form">
+            <form action="./enviar.php" method="POST" autocomplete="off">
+                <!-- left -->
+                <div class="contact-left">
+                    <h1 class="c-1-heading">
+                        <font style="border-bottom: 3px solid #63D9FF;">Escríbenos</font>
+                    </h1>
+                    <div class="f-name">
+                        <label for="">
+                            <font>Nombre</font>
+                        </label>
+                        <input type="text" name="customer_name" placeholder="Nombre completo" />
+                    </div>
+                    <div class="f-email">
+                        <label for="">
+                            <font>Email</font>
+                        </label>
+                        <input type="email" name="customer_email" placeholder="Example@gmail.com" />
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="contact-right">
+                    <div class="message">
+                        <label for="">
+                            <font>Mensaje</font>
+                        </label>
+                        <textarea name="customer_message" id="" cols="20" rows="5"
+                            placeholder="Escribe algo..."></textarea>
+                    </div>
+                    <!-- Submit -->
+                    <button type="submit">ENVIAR</button>
+                </div>
+            </form>
+        </section>
+    </main>
     <!-- Footer -->
     <footer class="footer-distributed">
         <div class="footer-left">
@@ -280,13 +286,14 @@
         <div class="footer-center">
             <div>
                 <div>
-                    <i class="fa fa-phone"></i>
-                    <p>+57 320-694-7655 </p>
+                    <i class="fa fa-map-marked-alt"></i>
+                    <p>Carrera 97 N# 95-08</p>
+                    <span>Apartadó - Barrio Fundadores</span>
                 </div>
             </div>
             <div>
                 <i class="fa fa-phone"></i>
-                <p>+57 314-682-8311</p>
+                <p>+57 314-682-8311 / +57 320-694-7655</p>
             </div>
             <div>
                 <i class="fa fa-envelope"></i>
@@ -295,19 +302,19 @@
         </div>
         <div class="footer-right">
             <p class="footer-company-about">
-                <span>Derechos reservados &copy INDES 2020</span>
+                <span>Derechos reservados &copy INDES 2021</span>
             </p>
             <div class="footer-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/educacion.igleico" target="_blank"><i class="fa fa-facebook"
+                        rel="noopener noreferrer"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-instagram"></i></a>
                 <a href="#"><i class="fa fa-youtube"></i></a>
             </div>
-            <img loading="lazy" src="./images/undraw_super_thank_you_obwk.svg" alt="welcome">
+            <!-- <img loading="lazy" src="./images/undraw_super_thank_you_obwk.svg" alt="welcome"> -->
         </div>
     </footer>
 </body>
-
 <script src="./js/c8e4d183c2.min.js"></script>
 <script src="./js/wow.min.js"></script>
 <script src="./js/jquery-3.5.1.min.js"></script>
