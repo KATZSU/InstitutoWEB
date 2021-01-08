@@ -2,17 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="caracteres" content="caracteres" charset="UTF-8">
     <title>INDES - Programas/Diplomados</title>
-    <meta http-equiv="X-UA-Compatible" content="IE-edgue">
+    <meta name="compatible" http-equiv="X-UA-Compatible" content="IE-edgue">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Import img, title, css, fontAwesome -->
     <link rel="icon"
         href="../images/classmates_communication_education_learning_media_networking_social_icon_123265.ico">
-    <link rel="stylesheet" type="text/css" href="../css/modal.css">
-    <link rel="stylesheet" type="text/css" href="../css/stylePro.css">
-    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/modal.css" media="print" onload="this.media='all'; this.onload = null">
+    <link rel="stylesheet" href="../css/stylePro.css">
+    <link rel="stylesheet" href="../css/animate.min.css" media="print" onload="this.media='all'; this.onload=null">
 </head>
 
 <body class="hidden">
@@ -25,17 +24,18 @@
     </div>
     <!-- Principal -->
     <section id="main">
-    <nav>
-        <!-- Logo instituto -->
-        <a href="#main" class="logo"><img src="../images/antorcha.webp" alt="logo_indes" class="logo-indes">NDES</a>
-        <!-- Menú -->
-        <div class="toggle"></div>
-        <ul class="menu">
-            <li>
-                <a href="#" onclick="retornoIndex();">Volver <i class="fas fa-reply"></i></a>
-            </li>
-        </ul>
-    </nav>
+        <nav>
+            <!-- Logo instituto -->
+            <a href="#main" class="animate__animated animate__pulse logo"><img src="../images/logoIndes.svg"
+                    alt="logo_indes" class="logo-indes" /></a>
+            <!-- Menú -->
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li>
+                    <a href="#" onclick="retornoIndex();">Volver <i class="fas fa-reply"></i></a>
+                </li>
+            </ul>
+        </nav>
     </section>
     <!-- Programas -->
     <section id="programas">
@@ -53,14 +53,13 @@
                     <!-- Type -->
                     <div class="s-type">Diplomado en pastoral infantil</div>
                     <!-- Name -->
-                    <img src="../images/school.svg">
+                    <a href="#popupx1"><img src="../images/school.svg" alt="diplomado_infantil"></a>
                 </div>
                 <!-- Text -->
                 <div class="s-b-text">
                     <a href="#popupx1">Pensum</a>
                 </div>
             </div>
-
             <!-- S2 -->
             <div class="s-box">
                 <!-- Img -->
@@ -68,22 +67,20 @@
                     <!-- Type -->
                     <div class="s-type">Diplomado en pastoral para la mujer</div>
                     <!-- Name -->
-                    <img src="../images/pixeltrue-idea-1.svg">
+                    <a href="#popupx2"><img src="../images/pixeltrue-idea-1.svg" alt="diplomado_muujer"></a>
                 </div>
                 <!-- Text -->
                 <div class="s-b-text">
                     <a href="#popupx2">Pensum</a>
                 </div>
             </div>
-
             <!-- S3 -->
             <div class="s-box">
                 <!-- Img -->
                 <div class="s-b-img">
                     <!-- Type -->
                     <div class="s-type">Diplomado en pedagogía</div>
-                    <!-- Name -->
-                    <img src="../images/teacher.svg">
+                    <a href="#popup"><img src="../images/teacher.svg" alt="pedagogia"></a>
                 </div>
                 <!-- Text -->
                 <div class="s-b-text">
@@ -91,13 +88,12 @@
                 </div>
             </div>
         </div>
-
         <!-- Modal de información para el pensum Infantil -->
         <div class="popup" id="popupx1">
             <div class="popup-inner">
                 <a href="#cerrarX"></a>
-                <object data="../docs/diplomado en pastoral infantil.pdf#toolbar=0" type="application/pdf" type="application/pdf"  width="100%"
-                height="600px"></object>
+                <object data="../docs/diplomado en pastoral infantil.pdf#toolbar=0" type="application/pdf"
+                    type="application/pdf" width="100%" height="600px" aria-labelledby="Pdf para descargar"></object>
                 <a class="popup__close" href="#cerrarX">X</a>
             </div>
         </div>
@@ -105,18 +101,17 @@
         <div class="popup" id="popupx2">
             <div class="popup-inner">
                 <a href="#cerrarX2"></a>
-                <object data="../docs/diplomado en pastoral para la mujer.pdf#toolbar=0" type="application/pdf" type="application/pdf"  width="100%"
-                height="600px"></object>
+                <object data="../docs/diplomado en pastoral para la mujer.pdf#toolbar=0" type="application/pdf"
+                    type="application/pdf" width="100%" height="600px" aria-labelledby="Pdf para descargar"></object>
                 <a class="popup__close" href="#cerrarX2">X</a>
             </div>
         </div>
-
         <!-- Modal de información para el pensum Pedagogia -->
         <div class="popup" id="popup">
             <div class="popup-inner">
                 <a href="#cerrarX3"></a>
-                <object data="../docs/DIPLOMADO EN PEDAGOGÍA.pdf#toolbar=0" type="application/pdf" type="application/pdf"  width="100%"
-                height="600px"></object>
+                <object data="../docs/DIPLOMADO EN PEDAGOGÍA.pdf#toolbar=0" type="application/pdf"
+                    type="application/pdf" width="100%" height="600px" aria-labelledby="Pdf para descargar"></object>
                 <a class="popup__close" href="#cerrarX3">X</a>
             </div>
         </div>
@@ -129,14 +124,13 @@
                     <!-- Type -->
                     <div class="s-type">Diplomado en misiología o escuela de misiones</div>
                     <!-- Name -->
-                    <img src="../images/undraw_the_world_is_mine_nb0e.svg">
+                    <a href="#popupMisio"><img src="../images/undraw_the_world_is_mine_nb0e.svg" alt="misiologia"></a>
                 </div>
                 <!-- Text -->
                 <div class="s-b-text">
                     <a href="#popupMisio">Pensum</a>
                 </div>
             </div>
-
             <!-- S2 -->
             <div class="s-box">
                 <!-- Img -->
@@ -144,14 +138,13 @@
                     <!-- Type -->
                     <div class="s-type">Diplomado en capellanía</div>
                     <!-- Name -->
-                    <img src="../images/undraw_hang_out_h9ud.svg">
+                    <a href="#popupCape"><img src="../images/undraw_hang_out_h9ud.svg" alt="capellania"></a>
                 </div>
                 <!-- Text -->
                 <div class="s-b-text">
                     <a href="#popupCape">Pensum</a>
                 </div>
             </div>
-
             <!-- S3 -->
             <div class="s-box">
                 <!-- Img -->
@@ -159,7 +152,7 @@
                     <!-- Type -->
                     <div class="s-type">Diplomado en consejeria prematrimonial</div>
                     <!-- Name -->
-                    <img src="../images/undraw_spread_love_r9jb.svg">
+                    <a href="#popupPre"><img src="../images/undraw_spread_love_r9jb.svg" alt="prematrimonial"></a>
                 </div>
                 <!-- Text -->
                 <div class="s-b-text">
@@ -167,13 +160,12 @@
                 </div>
             </div>
         </div>
-
         <!-- Modal de información para el pensum PARTE 2 -->
         <div class="popup" id="popupMisio">
             <div class="popup-inner">
                 <a href="#cerrarMisio"></a>
-                <object data="../docs/MISIOLOGIA.pdf#toolbar=0" type="application/pdf" type="application/pdf"  width="100%"
-                height="600px"></object>             
+                <object data="../docs/MISIOLOGIA.pdf#toolbar=0" type="application/pdf" type="application/pdf"
+                    width="100%" height="600px" aria-labelledby="Pdf para descargar"></object>
                 <a class="popup__close" href="#cerrarMisio">X</a>
             </div>
         </div>
@@ -181,18 +173,17 @@
         <div class="popup" id="popupCape">
             <div class="popup-inner">
                 <a href="#cerrarCape"></a>
-                <object data="../docs/CAPELLANIA.pdf#toolbar=0" type="application/pdf" type="application/pdf"  width="100%"
-                height="600px"></object>
+                <object data="../docs/CAPELLANIA.pdf#toolbar=0" type="application/pdf" type="application/pdf"
+                    width="100%" height="600px" aria-labelledby="Pdf para descargar"></object>
                 <a class="popup__close" href="#cerrarCape">X</a>
             </div>
         </div>
-
         <!-- Modal de información para el pensum Prematrimonial -->
         <div class="popup" id="popupPre">
             <div class="popup-inner">
                 <a href="#cerrar"></a>
-                <object data="../docs/DIPLOMADO EN CONSEJERÍA PREMATRIMONIAL.pdf#toolbar=0" type="application/pdf" type="application/pdf"  width="100%"
-                height="600px"></object>           
+                <object data="../docs/DIPLOMADO EN CONSEJERÍA PREMATRIMONIAL.pdf#toolbar=0" type="application/pdf"
+                    type="application/pdf" width="100%" height="600px" aria-labelledby="Pdf para descargar"></object>
                 <a class="popup__close" href="#cerrar">X</a>
             </div>
         </div>

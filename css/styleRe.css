@@ -133,16 +133,8 @@ nav {
   color: #292929;
 }
 
-.logo {
-  font-size: 25px;
-  font-weight: bold;
-  color: #292929;
-  font-family: "Poppins", sans-serif;
-}
-
 .logo-indes {
-  width: 30px;
-  transform: rotate(-45deg);
+  width: 80px;
 }
 
 .toggle {
