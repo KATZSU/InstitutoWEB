@@ -10,11 +10,16 @@
     <link rel="icon"
         href="./images/classmates_communication_education_learning_media_networking_social_icon_123265.ico">
     <link rel="stylesheet" href="./css/modal.css" media="print" onload="this.media='all'; this.onload = null">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <link rel="stylesheet" href="./css/cookieconsent.min.css" media="print"
+        onload="this.media='all'; this.onload = null" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animate.min.css" media="print" onload="this.media='all'; this.onload=null">
 </head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+    @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin-ext");
+</style>
 
 <body class="hidden">
     <!-- Preloader -->
@@ -65,7 +70,7 @@
                         </svg>
                     </li>
                 </ul>
-            </div><span>INDES</span>
+            </div><span class="indes-loader">INDES</span>
         </div>
     </div>
 
@@ -75,7 +80,7 @@
     <main>
         <!-- Principal -->
         <section id="main">
-            <nav id="onload" class="hidden">
+            <nav>
                 <a href="#main" class="animate__animated animate__pulse logo"><img src="./images/logoIndes.svg"
                         alt="logo_indes" class="logo-indes" /></a>
                 <div class="toggle"></div>
@@ -87,6 +92,10 @@
                     <li><a href="#" onclick="retornoRequisitos();">Bienestar</a></li>
                     <li><a href="#" onclick="retorno();">Revistas</a></li>
                     <li><a href="#contact-form">Contáctanos</a></li>
+                    <button class="switch" id="switch">
+                        <span><i class="far fa-sun"></i></span>
+                        <span><i class="fas fa-moon" style="color: rgba(241, 181, 15, 0.959);"></i></span>
+                    </button>
                 </ul>
             </nav>
             <!-- Informacián ins -->
@@ -104,14 +113,14 @@
                     dos modalidades de estudio, Formación Bíblica y Pastoral y Misiologia; complementando a través de
                     sus
                     estudios de extensión diplomados, cursos, seminarios, talleres y conferencias. <img loading="lazy"
-                        src="https://img.icons8.com/material-rounded/24/4a90e2/verified-account.png" />
+                        src="https://img.icons8.com/material-rounded/24/4a90e2/verified-account.png" alt="verificado" />
                 </p>
             </div>
             <div class="black-line"></div>
             <!-- Social -->
             <div class="animate__animated animate__pulse social">
                 <a href="https://www.facebook.com/educacion.igleico" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-facebook-f facebook"></i> </a>
+                        class="fab fa-facebook-f facebook"></i></a>
                 <a href="#"><i class="fab fa-twitter twitter"></i> </a>
                 <a href="#"><i class="fab fa-instagram instagram"></i></a>
                 <a href="#" class="youtube"><i class="fab fa-youtube youtube"></i> </a>
@@ -120,7 +129,7 @@
         <!-- Sobre -->
         <section id="about">
             <div class="about-text">
-                <h1 class="wow animate__animated animate__fadeInDown">Sobre nosotros.</h1>
+                <h1 class="wow animate__animated animate__fadeInDown">Sobre nosotros.</h1><br>
                 <h2 class="wow animate__animated animate__fadeInDown">Formando hombres y mujeres para el ministerio.
                 </h2>
                 <br>
@@ -401,7 +410,7 @@
         "theme": "classic",
         "position": "bottom-right",
         "content": {
-            "message": "Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio web.",
+            "message": "Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia y así mejorar los servicios.",
             "dismiss": "¡Entendido!",
             "link": "Aprende más"
         }

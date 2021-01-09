@@ -97,7 +97,7 @@ a {
       hsla(217, 96%, 81%, 0.521) 0%,
       hsla(199, 88%, 87%, 0.514) 100%
     ),
-    url(../images/bg3.png);
+    url(../images/bg9.svg);
 }
 
 nav {
@@ -162,10 +162,12 @@ nav {
 }
 
 .s-heading h1 {
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5%;
   font-size: 3rem;
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
 }
 
 .s-heading p {

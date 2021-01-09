@@ -67,7 +67,7 @@ body {
       hsla(217, 96%, 81%, 0.521) 0%,
       hsla(199, 88%, 87%, 0.514) 100%
     ),
-    url(../images/bg3.png);
+    url(../images/bg9.svg);
   min-height: 100vh;
   font-family: "Fira Sans", sans-serif;
   display: flex;
