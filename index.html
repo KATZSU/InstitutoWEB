@@ -309,7 +309,7 @@
         </section>
         <!-- Contact from -->
         <section id="contact-form">
-            <form action="./enviar.php" method="POST" autocomplete="off">
+            <form onsubmit="sendEmails();" method="POST" autocomplete="off">
                 <!-- left -->
                 <div class="contact-left">
                     <h1 class="c-1-heading">
@@ -319,13 +319,13 @@
                         <label for="nombre">
                             <font>Nombre</font>
                         </label>
-                        <input type="text" name="customer_name" placeholder="Nombre completo" id="nombre" />
+                        <input type="text" name="customer_name" placeholder="Nombre completo" id="customer_name" />
                     </div>
                     <div class="f-email">
                         <label for="email">
                             <font>Email</font>
                         </label>
-                        <input type="email" name="customer_email" placeholder="Example@gmail.com" id="email" />
+                        <input type="email" name="customer_email" placeholder="Example@gmail.com" id="customer_email" />
                     </div>
                 </div>
                 <!-- right -->
@@ -334,7 +334,7 @@
                         <label for="mensaje">
                             <font>Mensaje</font>
                         </label>
-                        <textarea name="customer_message" id="mensaje" cols="20" rows="5"
+                        <textarea name="customer_message" id="customer_message" cols="20" rows="5"
                             placeholder="Escribe algo..."></textarea>
                     </div>
                     <!-- Submit -->
@@ -415,6 +415,21 @@
             "link": "Aprende más"
         }
     });
+
+    function sendEmails(){
+        var customer_name = $("#customer_name").val();
+        var customer_email = $("#customer_email").val();
+        var customer_message = $("#customer_message").val();
+        $.ajax({
+            url:'./enviar.php',
+            type:'POST',
+            data:{
+                sendName:customer_name,
+                sendEmail:customer_email,
+                sendMessage:customer_message
+            }
+        });
+    }
 </script>
 
 </html>
